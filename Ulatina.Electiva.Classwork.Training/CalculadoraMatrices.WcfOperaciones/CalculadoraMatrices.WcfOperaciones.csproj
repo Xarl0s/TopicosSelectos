@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\Acciones\Transponer.cs" />
+    <Compile Include="Dominio\Especificaciones\CalculeLaTranspuesta.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
@@ -73,7 +74,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Dominio\Especificaciones\" />
     <Folder Include="Dominio\Repositorio\" />
     <Folder Include="Dominio\Validaciones\" />
   </ItemGroup>

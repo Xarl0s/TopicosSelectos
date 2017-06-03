@@ -7,9 +7,13 @@ namespace CalculadoraMatrices.WcfOperaciones.Dominio.Acciones
 {
     public class Transponer
     {
-        public double[][] Transpuesta(double[][] laMatriz)
+        public double[,] Transpuesta(double[,] laMatriz)
         {
-            double[][] elResultado = { new double[] { 2, 3 }, new double[] { 1, 6, 8 } };
+            double[,] elResultado;
+            //CalculadoraMatrices.WcfOperaciones.Dominio.Especificaciones.CalculeLaTranspuesta laEspecificacion = new CalculadoraMatrices.WcfOperaciones.Dominio.Especificaciones.CalculeLaTranspuesta();
+            //Especificaciones.CalculeLaTranspuesta laEspecificacion = new Especificaciones.CalculeLaTranspuesta();
+            var laEspecificacion = new Especificaciones.CalculeLaTranspuesta();
+            elResultado = laEspecificacion.Transpuesta(laMatriz);
             return elResultado;
         }
     }

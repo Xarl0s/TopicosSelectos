@@ -13,7 +13,7 @@ namespace CalculadoraMatrices.WcfOperaciones
     public interface IService1
     {
         [OperationContract]
-        double[][] ObtenerMatrizTranspuesta(double[][] laMatriz);
+        double[,] ObtenerMatrizTranspuesta(double[,] laMatriz);
 
         [OperationContract]
         string GetData(int value);
